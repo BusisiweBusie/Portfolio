@@ -1,0 +1,243 @@
+@import url('http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+
+ 
+background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+
+}
+
+a {
+    color: #4223f0;
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar ul {
+    display: flex;
+     
+    
+     
+}
+
+.navbar ul {
+    list-style: none;
+    margin-left: 40px;
+}
+
+/*.navbar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: .5s;
+}
+.navbar ul li a:hover {
+    color: rgb(11, 243, 30);
+
+}*/
+
+.navbar ul a {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(140, 226, 241);
+    margin-left: 3.5rem;
+    transition: .5s;
+}
+.navbar ul a:hover a,
+.navbar ul a :active {
+    color: rgb(231, 235, 23);
+    
+}
+
+
+.home {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: white;
+}
+.home-info h1 {
+    font-size: 55px;
+    
+}
+.home-info h2 {
+    font-size: 32px;
+    margin-top: -10px;
+}
+.home-info p {
+    font-size: 16px;
+    margin: 10px 0 25px;
+}
+.home-info .btn-sci {
+    display: flex;
+    align-items: center;
+}
+.btn-sci {
+    width: 25%;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #b3db68;
+    border: 2px solid #2dcbf3;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #deeaf0;
+
+}
+.home-image {
+   
+    width: 500px;           /* Width and height to control size */
+    height: 500px; 
+    overflow: hidden;       /* Ensures the image is contained within the circle */
+    display: flex;
+    position: absolute;
+   margin-left: 1000px;
+   margin-top: 270px;
+}
+.home-image2 {
+   
+    width: 500px;           /* Width and height to control size */
+    height: 500px; 
+    overflow: hidden;       /* Ensures the image is contained within the circle */
+    display: flex;
+    position: absolute;
+   margin-right: 1000px;
+   margin-top: 270px;
+}
+/* Style the image inside */
+.home-image img {
+   
+    width: 80%;            /* Makes the image fill the container */
+    height: 100%;
+}
+.about {
+
+    padding: 60px 9% 0;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    
+}
+ 
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+ 
+.about-col-2 {
+    padding: 60px 9% 0;
+    color:#ffffff;
+}
+ 
+.languages {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    align-items: center;
+}
+ 
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+ 
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+ 
+.tab-links {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+ 
+.sub-title1 {
+    font-size: 60px;
+    font-weight: 600;
+    color: #d8d1d1;
+    align-items: center;
+}
+ 
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #00a2ff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+ 
+.tab-links.active-link::after {
+    width: 50%;
+}
+ 
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+ 
+.tab-contents ul li span {
+    color: #00a2ff;
+    font-size: 14px;
+}
+ 
+.tab-contents {
+    display: none;
+}
+ 
+.tab-contents.active-tab {
+    display: block;
+}
+ 
+.icon-container {
+    display: flex;
+    gap: 70px;
+    margin-left: 300px;
+}
+ 
+.icon {
+    text-align: center;
+    font-size: 100px;
+}
+ 
+.icon i {
+    transition: transform 0.3s;
+}
+ 
+.icon p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+ 
+.icon img:hover {
+    transform: scale(1.1);
+}

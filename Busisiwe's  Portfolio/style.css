@@ -29,6 +29,8 @@ a {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background-color: rgb(237, 137, 182);
+
 }
 
 .navbar .logo {
@@ -62,7 +64,7 @@ a {
 .navbar ul a {
     font-size: 20px;
     font-weight: 500;
-    color: rgb(140, 226, 241);
+    color: rgb(32, 5, 205);
     margin-left: 3.5rem;
     transition: .5s;
 }
@@ -147,7 +149,7 @@ a {
 }
  
 .about-col-2 {
-    padding: 60px 9% 0;
+    
     color:#ffffff;
 }
  
@@ -180,15 +182,16 @@ a {
 .sub-title1 {
     font-size: 60px;
     font-weight: 600;
-    color: #d8d1d1;
+    color: #ffffff;
     align-items: center;
+    padding-bottom: 20px;
 }
  
 .tab-links::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #00a2ff;
+    background: #4c1cea;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -205,7 +208,7 @@ a {
 }
  
 .tab-contents ul li span {
-    color: #00a2ff;
+    color: #1613e0;
     font-size: 14px;
 }
  
@@ -216,28 +219,61 @@ a {
 .tab-contents.active-tab {
     display: block;
 }
- 
-.icon-container {
-    display: flex;
-    gap: 70px;
-    margin-left: 300px;
-}
- 
-.icon {
+
+/*Skill style*/
+
+img{
+    width: 60px;
+    height: 60px;
+  }
+  .container{
+    display: grid;
+    padding: 60px 9% 0;
+  
+  }
+  .container__box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
+    gap: 15px;
+  }
+  .container .container__box .box{
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 5px 5px 6px #333;
     text-align: center;
-    font-size: 100px;
-}
- 
-.icon i {
-    transition: transform 0.3s;
-}
- 
-.icon p {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #333;
-}
- 
-.icon img:hover {
-    transform: scale(1.1);
-}
+    padding: 20px 30px;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: .2s, linear;
+  }
+  .container__heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color: #e3e3e3;
+    text-shadow: 0 0 10px black;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .container .container__box .box h3{
+    color: #444;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .container .container__box .box p{
+    font-size: 14px;
+    font-weight: 100;
+    color: #555;
+  }
+  .container .container__box .box a{
+    border-radius: 4px;
+    background:#444;
+    color: white;
+  }
+  .container .container__box .box a:hover{
+    background: #908080;
+  }

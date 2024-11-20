@@ -6,7 +6,9 @@
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
-
+.html {
+    scroll-behavior: smooth;
+}
 body {
 
  
@@ -178,7 +180,7 @@ a {
     cursor: pointer;
     position: relative;
 }
- 
+
 .sub-title1 {
     font-size: 60px;
     font-weight: 600;
@@ -186,7 +188,7 @@ a {
     align-items: center;
     padding-bottom: 20px;
 }
- 
+
 .tab-links::after {
     content: '';
     width: 0;
@@ -197,11 +199,11 @@ a {
     bottom: -8px;
     transition: 0.5s;
 }
- 
+
 .tab-links.active-link::after {
     width: 50%;
 }
- 
+
 .tab-contents ul li {
     list-style: none;
     margin: 10px 0;
@@ -243,7 +245,7 @@ img{
     text-align: center;
     padding: 20px 30px;
   }
-  
+
   *{
     margin: 0;
     padding: 0;
@@ -255,7 +257,7 @@ img{
     text-align: center;
     padding-bottom: 15px;
     color: #e3e3e3;
-    text-shadow: 0 0 10px black;
+    text-shadow: 0 0 10px #ffffff;
     font-size: 50px;
     font-weight: 600;
   }
@@ -277,3 +279,40 @@ img{
   .container .container__box .box a:hover{
     background: #908080;
   }
+  /*contact style*/
+  #contact {
+    background: #f18bbe;
+    color: #fff;
+}
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #ffe7e7;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+ .btn{
+    background-color: #4c1cea;
+    color: #e3e3e3;
+    border-radius: 5px;
+    border: none;
+    width: 15%;
+    cursor: pointer;
+    font-size: 16px;
+ }
+.header1{
+    font-size: 60px;
+    color: #ffffff;
+}
+ 
+section {
+    padding: 60px 0;
+}
+
+ 
+

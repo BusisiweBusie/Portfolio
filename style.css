@@ -13,6 +13,7 @@ body {
 
  
 background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+background-repeat: no-repeat;
 
 }
 
@@ -42,8 +43,7 @@ a {
 
 .navbar ul {
     display: flex;
-     
-    
+      
      
 }
 
@@ -95,13 +95,25 @@ a {
 .home-info p {
     font-size: 16px;
     margin: 10px 0 25px;
+    padding-right: 400px;
 }
 .home-info .btn-sci {
     display: flex;
     align-items: center;
 }
 .btn-sci {
-    width: 25%;
+    width: 15%;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #b3db68;
+    border: 2px solid #2dcbf3;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #deeaf0;
+
+}
+ /* submit form button*/
+.btn1 {
+    width: 100%;
     display: inline-block;
     padding: 10px 30px;
     background: #b3db68;
@@ -314,5 +326,120 @@ section {
     padding: 60px 0;
 }
 
- 
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Stack menu items vertically */
+        margin-left: 0;
+    }
+    .home {
+        flex-direction: column;
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+    .home-image {
+        margin-left: 0;
+        width: 100%;
+        height: auto; /* Make image responsive */
+    }
+}
 
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Reduce font size for smaller screens */
+    }
+
+    .navbar {
+        padding: 10px; /* Smaller padding for the navbar */
+    }
+    .home-info {
+        padding-top: 250px;
+    }
+    .home-info h1 {
+        font-size: 32px; /* Reduce font size for headings */
+    }
+    .sub-title1 {
+        font-size: 32px; 
+
+
+    }
+    .btn-sci {
+        width: 50%; /* Full-width button */
+        padding: 10px 15px;
+    }
+    .container__box {
+        grid-template-columns: 1fr; /* Single-column layout */
+    }
+    .home {
+        
+        padding: 5%;
+        height: auto; /* Allow height to adjust dynamically */
+    }
+    
+    .home-image {
+        width: 80%;  /* Use percentage for fluid layouts */
+        max-width: 500px; /* Restrict to a maximum size */
+        height: auto; /* Maintain aspect ratio */
+        display: none;
+    }
+    .home-info p {
+        font-size: 16px;
+        margin: 10px 0 25px;
+        padding-right: 0px;
+        padding-top: 10px;
+    }
+    /* Grid for skills section */
+.container__box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust column count */
+    gap: 15px;
+}
+h1 {
+    font-size: clamp(1.5rem, 5vw, 3rem); /* Adapts based on viewport width */
+}
+img, video {
+    max-width: 100%; /* Constrain to the container */
+    height: auto;    /* Maintain aspect ratio */
+}
+.navbar ul {
+    flex-direction: column;
+}
+}
+
+@media (min-width: 768px) {
+    .navbar ul {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        margin-left: 0;
+        background-color: #f18bbe;
+        padding: 10px;
+    }
+    .navbar ul a {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .home {
+        flex-direction: column;
+        text-align: left;
+        padding: 20px;
+    }
+    .home-image {
+        margin: 20px 0;
+        width: 90%;
+    }
+}
+  
+
+
+
+
+    
+
+
+
+ 

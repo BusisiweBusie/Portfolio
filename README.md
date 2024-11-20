@@ -8,7 +8,6 @@ This repository contains the source code for Busisiwe Mcaka's personal portfolio
 - [Overview](#overview)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Setup](#setup)
 - [Usage](#usage)
 - [Contact](#contact)
 
@@ -35,14 +34,13 @@ The portfolio website includes:
 - **Boxicons**: Icons used across the website.
 - **GitHub**: Version control and repository management.
 
-## Setup
+## Usage
 
-To run the project locally:
+- Explore the sections to learn more about Busisiwe Mcaka.
+- Use the "Download CV" button to download the resume.
+- Fill out the contact form to send a direct message.
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/portfolio-website.git
+## Contact
 
-
-
-
+For inquiries, you can reach out via the contact form on the website or send an email directly to:
+- **Email**:Busisiwemcaka@gmail.com

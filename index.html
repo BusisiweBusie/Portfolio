@@ -13,9 +13,12 @@
 <body>
     <div id = "Home">
     <nav class="navbar">
-        <a href="#" class="logo">Portfolio</a>
-        
-       
+        <a href="#" class="logo">Busie</a>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div> 
+        </div>
         <ul class="nav-links">
             <!--<li class="active"><a href ="#" ></a>Home</li>
             <li><a href ="#" ></a>About</li>
@@ -58,7 +61,12 @@
         <i class='bx bx-envelope'></i>
     </a>
 </div>
-
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+</script>
 
 
     </section>

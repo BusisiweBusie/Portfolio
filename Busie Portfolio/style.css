@@ -1,4 +1,4 @@
-@import url('http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
@@ -33,7 +33,27 @@ a {
     align-items: center;
     z-index: 100;
     background-color: rgb(237, 137, 182);
+    transition: background-color 0.3s ease;
 
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #ee1e52;
+    color: #fff;
+}
+
+.nav-link.active {
+    background-color: #ee1e52; 
+    color:#fff;
+    transition: background-color 0.3s ease;
 }
 
 .navbar .logo {
@@ -43,11 +63,6 @@ a {
 
 .navbar ul {
     display: flex;
-      
-     
-}
-
-.navbar ul {
     list-style: none;
     margin-left: 40px;
 }
@@ -111,7 +126,7 @@ a {
     box-shadow: 0 0 10px #deeaf0;
 
 }
- /* submit form button*/
+ 
 .btn1 {
     width: 100%;
     display: inline-block;
@@ -122,30 +137,64 @@ a {
     box-shadow: 0 0 10px #deeaf0;
 
 }
+.social-media a{
+    gap: 50px; 
+    margin-top: 20px;
+    font-size: 30px;
+}
+/* .social-icons .a {
+    font-size: 50px;
+    color: white;
+    background-color: #15ff00; 
+    width: 80px; 
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease; 
+}
+
+.social-media .icon.linkedin:hover {
+    color: #4267B2;
+    background-color: white;
+}
+
+.social-media .icon.github:hover {
+    color: #1DA1F2;
+    background-color: white;
+}
+
+.social-media .icon.envelope:hover {
+    color: #C13584;
+    background: white;
+}
+
+.social-media .icon:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.5);
+} */
+
 .home-image {
-   
-    width: 500px;           /* Width and height to control size */
+    width: 500px;           
     height: 500px; 
-    overflow: hidden;       /* Ensures the image is contained within the circle */
+    overflow: hidden;      
     display: flex;
     position: absolute;
-   margin-left: 1000px;
+   margin-left: 1050px;
    margin-top: 270px;
 }
 .home-image2 {
    
-    width: 500px;           /* Width and height to control size */
-    height: 500px; 
-    overflow: hidden;       /* Ensures the image is contained within the circle */
+    width: 500px;           
+    overflow: hidden;      
     display: flex;
     position: absolute;
    margin-right: 1000px;
    margin-top: 270px;
 }
-/* Style the image inside */
+
 .home-image img {
    
-    width: 80%;            /* Makes the image fill the container */
+    width: 80%;            
     height: 100%;
 }
 .about {
@@ -234,8 +283,6 @@ a {
     display: block;
 }
 
-/*Skill style*/
-
 img{
     width: 60px;
     height: 60px;
@@ -291,7 +338,7 @@ img{
   .container .container__box .box a:hover{
     background: #908080;
   }
-  /*contact style*/
+ 
   #contact {
     background: #f18bbe;
     color: #fff;
@@ -317,78 +364,174 @@ form textarea {
     cursor: pointer;
     font-size: 16px;
  }
+ /* Soft Skills Section */
+.soft-skills {
+    background: linear-gradient(to bottom, #f3f4f6, #e2e8f0); /* Soft gradient background */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px; /* Space inside the section */
+    margin: 20px auto; /* Center section with margin */
+    max-width: 600px; /* Limit width for readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+}
+
+
+.soft-skills h2 {
+    font-family: 'Arial', sans-serif; 
+    color: #1a202c; 
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+
+.soft-skills ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.soft-skills ul li {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2d3748; 
+    padding: 10px 0; 
+    transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+
+.soft-skills ul li:hover {
+    color: #3182ce; 
+    transform: scale(1.05); 
+    cursor: pointer;
+}
+
+ .btn1 {
+    width: 15%;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #b3db68;
+    border: 2px solid #2dcbf3;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #deeaf0;
+
+ }
+
 .header1{
     font-size: 60px;
     color: #ffffff;
 }
+
  
 section {
     padding: 60px 0;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 992px) {
-    .navbar {
-        padding: 20px 5%;
-    }
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* For tablets and smaller devices */
+@media (max-width: 1024px) {
     .navbar ul {
-        margin-left: 20px;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        row-gap: 5px;
+      
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
     }
+
+    .home {
+        flex-direction: column; /* Stack content vertically */
+        padding: 30px 5%;
+    }
+
+    .home-image {
+        width: 80%; /* Reduce image size */
+        margin: 0 auto;
+    }
+
+    .home-info p {
+        padding-right: 0; /* Remove extra padding for smaller screens */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 5%;
+    }
+  
+
+    .navbar .logo {
+        font-size: 24px;
+    }
+
     .home-info h1 {
-        font-size: 40px;
+        font-size: 40px; /* Reduce heading size */
     }
+
     .home-info h2 {
         font-size: 24px;
     }
-    .home-info p {
-        padding-right: 200px;
+
+    .btn-sci {
+        width: auto;
     }
-    .home-image, .home-image2 {
-        width: 300px;
-        height: 300px;
+
+    .container__box {
+        grid-template-columns: 1fr; /* One column layout for mobile */
     }
 }
 
-@media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .navbar ul a {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-    .home {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .home-info {
-        padding: 20px 5%;
-    }
-    .home-info p {
-        padding-right: 0;
-    }
-    .home-image, .home-image2 {
-        position: static;
-        margin: 20px 0;
-    }
-}
-
-@media (max-width: 576px) {
+/* For very small mobile devices */
+@media (max-width: 480px) {
     .home-info h1 {
-        font-size: 30px;
+        font-size: 10px;
+        margin-top: 50px;
     }
+
     .home-info h2 {
-        font-size: 20px;
+        font-size: 16px;
     }
-    .home-info p {
-        font-size: 14px;
+
+    .soft-skills ul li {
+        font-size: 16px; /* Adjust text size for readability */
     }
-    .home-image, .home-image2 {
-        width: 200px;
-        height: 200px;
-    }
-    .container__heading {
-        font-size: 40px;
+
+    .social-media a {
+        font-size: 24px;
     }
 }
+.container__box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+}
+
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 2px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+body {
+    font-size: 1rem; /* Relative font size */
+}
+
+.home-info h1 {
+    font-size: 3rem; /* Scales with the root font size */
+}
+
+
+

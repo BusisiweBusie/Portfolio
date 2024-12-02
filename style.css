@@ -583,3 +583,34 @@ margin-left: 2px;
         font-size: 14px;
     }
 }
+
+.chatbot-popup {
+    display: flex;
+    width: 300px;
+   border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    background: #d5bfe2;
+    color: rgb(61, 3, 44);
+    border-bottom: 1px solid #544d8d;
+    position: absolute;
+    left: 1300px;
+    bottom: -1950px;
+    
+  }
+  
+  .chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f147db;
+  }
+  
+  #chatbot-header i {
+    margin-right: 8px;
+    font-size: 20px;
+  }
+   

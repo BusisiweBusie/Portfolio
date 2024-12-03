@@ -10,11 +10,11 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
   <title>AI Chatbot</title>
-  <!-- Linking  font-awesome for icons --> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=smart_toy" />
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_arrow_down" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script.js"defer></script>
+  
 </head>
 </head>
 <body>
@@ -206,36 +206,34 @@
     <div class="footer-bottom">
         <p><center>&copy; 2024 Portfolio | Designed by Busisiwe Mcaka ❤️</center></p>
     </div>
-    <div class="chatbot-popup">
-    <div id="chatbot">
-        <div id="chat-header">
-          <i class="fas fa-robot"></i>chat with Busie
-        </div>
-        <div id="chat-window"></div>
-        <div id="chat-window"></div>
-        <button class="material-symbols-rounded">keyboard_arrow_down</button>
-        <div class="chat-body">
-            "<a src="https://www.flaticon.com/free-icons/chatbot" title="chatbot iconsChatbot icons created by juicy_fish - Flaticon"</a>
-           <div class="message bot-message"></div>
-           <div class="message-text">"Hi there!👋 <br/> How can I assist you today? 😊"
-           </div>
-           <div class="message user-message">
-               <div class="message-text">Ask me about my Portfolio</div>
-           </div>
-<div class="chat-footer">
-  <form action="#" class="chat-form">
-    <textarea placeholder="Message..." class="message-input"></textarea>
-    <div class="chat-controls">
-      <button type="button" id="emoji-picker" class="fa-regular fa-face-smile fa-2x"></button>
-      <button type="button" id="file-upload" class="fa-solid fa-paperclip fa-2x"></button>
-      <button type="submit" id="send-message" class="fa-solid fa-arrow-up fa-2x"></button>
+    <body class="show-chatbot">
+        <button class="chatbot-toggler">
+            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+            <i class="fa fa-window-close-o" aria-hidden="true"></i>
+        </button>
+    
+    <div class="chatbot">
+    <header>
+        <h2>Chat with Busie 🤖</h2>
+        <i class="fa fa-window-close-o" aria-hidden="true"></i>
+        </button>
+    </header>
+    <ul class="chatbox">
+    <li class="chat incoming">
+        <span class="material-symbols-outlined">smart_toy</span>
+        <p>Hi there!👋 <br/> How can I assist you today? 😊</p>
+    </li>
+    <li class="chat outgoing">
+       <p>Tell me about yourself</p> 
+    </li>
+    </ul>
+    <div class="chat-input">
+        <textarea placeholder="Enter a message..."required></textarea>
+        <button>send</button>
+         <!--<span class="material-symbols-outlined">send</span>-->
+       
     </div>
-  </form>
-</div>
-</footer>
-
     </div>
-</div>
-
+    
 </body>
 </html>

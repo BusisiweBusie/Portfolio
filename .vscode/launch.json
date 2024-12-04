@@ -4,13 +4,11 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
         {
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "C:\\Users\\CAPACITI-JHB\\Music\\Portfolio\\index.html",
-         
+            "file": "c:/Users/CAPACITI-JHB/OneDrive/Pictures/Portfolio/index.html"
         }
     ]
 }

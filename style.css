@@ -635,6 +635,7 @@ margin-left: 2px;
     right: 20px;
     top: 50%;
     color:#4ef33f;
+    font-size: 20px;
     cursor: pointer;
     transform: translateY(-50);
   
@@ -719,15 +720,17 @@ margin-left: 2px;
    .chatbot-toggler {
     position: fixed;
     right: 40px;
-    bottom: 50px;
+    bottom: 100px;
     height: 50px;
+    width: 70px;
     color: #95ee07;
+    font-size: 29px;
     outline: none;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #ee1153;
+    background: #4406d4;
     border-radius: 15px;
    }
   
@@ -735,7 +738,13 @@ margin-left: 2px;
     position: absolute;
   
    }
-  
+   .chatbot {
+    display: none;
+  }
+   
+  .chatbot.show {
+    display: block;
+  }
   
    @media(max-width: 490px) {
     .chatbot {

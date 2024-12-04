@@ -39,7 +39,7 @@ closeIcon.addEventListener('click', () => {
   const responses = [
       "Well, I have both technical skills and soft skills. Do you want me to tell you specifically what they are?",
       "For technical skills, I am good at HTML, CSS, JavaScript, Node.js, MySQL, Cisco, and GitHub.  ",
-      "For soft skills, I am good at communicating,problem-solving,teamwork and time management",
+      "For soft skills, I am good at communicating, problem-solving, teamwork and time management",
       "I'm still learning! For further assistance, please contact Busisiwe@gmail.com 😊"
   ];
 
